@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Chayathorn Teratanitnan} \\ \vspace{1pt}
+    \footnotesize{
+      \faIcon{envelope} \href{mailto:chayathorn.tet@student.mahidol.edu}{\underline{chayathorn.tet@student.mahidol.edu}} $|$ 
+      \faIcon{address-card} \href{https://www.linkedin.com/in/chayathorn-teratanitnan-53b2a4232/}{\underline{https://www.linkedin.com/in/chayathorn-teratanitnan-53b2a4232/}} $|$ 
+      \faIcon{github} \href{https://github.com/injurio}{\underline{https://github.com/injurio}} $|$
+      \faIcon{phone} {\underline{+66 09 909 8754}}
+    }
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bangkok Payment Solutions Co., Ltd.}{Aug 2022 - Apr 2023 (9 months)}
+      {Software Engineer}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Internal Payment System and Payment gateway}
+        \resumeItem{System Configuration for }
+        \resumeItem{Train system knowledge (as the company is working on a train system}
+        \resumeItem{Electrical Engineering and hard engineer on side experince from under-constructed Train-station}
+        \resumeItem{Migrated large .NET Framework legacy application to .NET Core and deployed to Istio service mesh}
+        \resumeItem{Visualized data using SQL in Apache Superset for our stakeholders}
+        \resumeItem{Worked in an Agile environment to enhance efficiency and productivity}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mahidol University International College}{Nakhon Pathom, Thailand}
+      {Bachelor of Science in Computer Science, Minor in Japanese}{Sep. 2019 -- Jul. 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Single-cycle-MIPS-Simulator} (\https://github.com/injurio/Single-cycle-MIPS-Simulator}{\underline{source}}) $|$ \emph{C}}{}
+        \resumeItemListStart
+          \resumeItem{Simple Single cycle Microprocessor without Interlocked Pipelined Stages}
+          \resumeItem{A collection of intruction that do various of job in C}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Data Analyst: Thailand Accident} $|$ \emph{Python, Pandas, Numpy, Seaborn, Pyplot, Sklearn}}{}
+        \resumeItemListStart
+          \resumeItem{A study of Thailand Accident report 2020 with Deep detail detail}
+          \resumeItem{There are a lot of intresting data from just a year and how much of damage in a month people can do}
+          \resumeItem{A visualized data and graph}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{AWS Financial Expense } $|$ \emph{Vue 3, Vite, AWS, Tailwind}}{}
+        \resumeItemListStart
+          \resumeItem{Work on both frontend and backend}
+          \resumeItem{A webapp to mark your expense of the day/month}
+          \resumeItem{Visually appealing and easy to use UI}
+          \resumeItem{An attempt on new topic}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{IC Shell} (\href{https://github.com/fordkuppp/icsh}{\underline{source}}) $|$ \emph{C}}{}
+        \resumeItemListStart
+          \resumeItem{Developed a shell program using C }
+          \resumeItem{Utilized parallelism to execute background and foreground jobs }
+          \resumeItem{Implemented most basic features such as redirection, scripting, and etc. }
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Tools}{: GitLab CI/CD, GitHub Action, Docker, Proxmox, Bash, Git, Unix, AWS, JupyerNodebook} \\
+      \textbf{Languages}{: Java, Python, Rust, C, Scala, MySQL, HTML/CSS, JavaScript} \\
+      \textbf{Framework}{: .NET Core, .NET Framework, SolidJS, ExpressJS, NextJS, VueJs}
+    }}
+  \end{itemize}
+
+%-----------LANGUAGES SKILLS-----------
+\section{Languages Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Thai}{: Native} \\
+     \textbf{English}{: C1 (IELTS 7.0)} \\
+     \textbf{Japanese}{: Communicable} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
